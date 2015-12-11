@@ -24,4 +24,6 @@ import com.pavelfatin.game.Space;
 
 public interface Behavior {
     Direction nextDirection(Space space);
+    // Space is an interface with an Array of available directions and a method to head towards a specific object.
+    // Direction is a class which allows the mob to turn.
 }
