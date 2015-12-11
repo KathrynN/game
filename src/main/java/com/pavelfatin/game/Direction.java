@@ -19,7 +19,7 @@ package com.pavelfatin.game;
 
 import java.awt.*;
 
-
+//an enum is a defined set of variables, outside of which a variable cannot be set.  You can access these with Direction.values()
 public enum Direction {
     None(0, 0),
     Left(-1, 0),
@@ -27,10 +27,11 @@ public enum Direction {
     Up(0, -1),
     Down(0, 1);
 
+
     public static final Direction[] MOVING_DIRECTIONS = {Left, Right, Up, Down};
     private Point _vector;
 
-
+    // sets vector to be a certain point
     Direction(int x, int y) {
         _vector = new Point(x, y);
     }
